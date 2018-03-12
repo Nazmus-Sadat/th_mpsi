@@ -1,10 +1,10 @@
 # A Privacy-preserving Distributed Filtering Framework for NLP Artifacts
 
-This repository contains the source code for the project "A Privacy-preserving Distributed Filtering Framework for NLP Artifacts". 
-The software manual is also available in pdf format. Please see manual.pdf for details.
-This software has been tested using Google cloud’s n1-standard-8 (Ubuntu 16.04.3 LTS) and Amazon’s
-r3.xlarge (Ubuntu 16.04.2 LTS). However, this package should work in lower configuration machines as
-long as these machines have multiple cores. The following software modules are required.  An installation script (script.sh) is provided with the package to install these modules.  This script should be executed in the project directory.
+This repository contains the source code for the project "A Privacy-preserving Distributed Filtering Framework for NLP Artifacts".
+
+The software manual is also available in pdf format. Please see manual.pdf.
+
+This software has been tested using Google cloud’s n1-standard-8 (Ubuntu 16.04.3 LTS) and Amazon’s r3.xlarge (Ubuntu 16.04.2 LTS). However, this package should work in lower configuration machines as long as these machines have multiple cores. The following software modules are required.  An installation script (script.sh) is provided with the package to install these modules. This script should be executed in the project directory.
   - libssl
   - NFLlib
   - GMP
