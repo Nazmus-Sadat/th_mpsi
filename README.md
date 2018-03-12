@@ -43,14 +43,11 @@ Entity specific directory and files are described in the following subsections.
 # Compilation
 - Compiling the executable for central server:
 ```sh
-g++ central_server.cpp -o cs.o a.out -std=c++11 -fopenmp  -I./include/ -I./include/nfl/
--I./include/nfl/prng/ -I./lib/prng/ -I./lib/params/ -I./include/nfl/opt/arch/ -lgmpxx -lgmp
--lmpfr -m64 -DNTT_AVX -DNTT_SSE
+g++ central_server.cpp -o cs.o a.out -std=c++11 -fopenmp  -I./include/ -I./include/nfl/ -I./include/nfl/prng/ -I./lib/prng/ -I./lib/params/ -I./include/nfl/opt/arch/ -lgmpxx -lgmp -lmpfr -m64 -DNTT_AVX -DNTT_SSE
 ```
 - Compiling the executable for CSP:
 ```sh
-g++ csp.cpp -o csp.o a.out -std=c++11  -I./include/ -I./include/nfl/ -I./include/nfl/prng/
--I./lib/prng/ -I./lib/params/ -I./include/nfl/opt/arch/ -lgmpxx -lgmp  -lmpfr -m64 -DNTT_AVX -DNTT_SSE
+g++ csp.cpp -o csp.o a.out -std=c++11  -I./include/ -I./include/nfl/ -I./include/nfl/prng/ -I./lib/prng/ -I./lib/params/ -I./include/nfl/opt/arch/ -lgmpxx -lgmp  -lmpfr -m64 -DNTT_AVX -DNTT_SSE
 ```
 - Compiling the executable for data owner:
 ```sh
