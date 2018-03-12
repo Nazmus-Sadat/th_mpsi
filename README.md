@@ -14,7 +14,7 @@ long as these machines have multiple cores. The following software modules are r
 GCC 5.4.1 or later is recommended
 
 # Entities in the System Architecture and Corresponding Executable
-<img src="http://dsp.cs.umanitoba.ca/files/mpsi/images/SequenceDiagram27Jan_18.png"/>
+<img src="http://dsp.cs.umanitoba.ca/SequenceDiagram27Jan_18.png"/>
 
 
 | Entity | Executable |
