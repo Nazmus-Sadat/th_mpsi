@@ -14,6 +14,7 @@ long as these machines have multiple cores. The following software modules are r
 GCC 5.4.1 or later is recommended
 
 # Entities in the System Architecture and Corresponding Executable
+![System Architecture] (https://github.com/Nazmus-Sadat/datasciencecoursera/blob/master/SequenceDiagram27Jan_18.png)
 | Entity | Executable |
 | ------ | ------ |
 | Crypto Service Provider (CSP) | csp.cpp |
