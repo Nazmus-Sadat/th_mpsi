@@ -95,6 +95,7 @@ The default number of data owners is three. src_additional directory contains co
 
 # License
 GPLv3
+
 This software uses the following projects (licensed under GPLv3):
--  NFLlib
+- NFLlib
 - FV-NFLlib
