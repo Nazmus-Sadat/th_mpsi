@@ -31,6 +31,7 @@ Common directory and files:
 - FV_2.hpp:  library for FV cryptosystem
 - fvnamespace2.h:  for FV cryptosystem
 - script.sh:  script for dependency installation
+
 Entity specific directory and files are described in the following subsections.
 
 ## Central Server
