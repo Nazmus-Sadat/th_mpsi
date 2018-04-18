@@ -23,6 +23,25 @@ GCC 5.4.1 or later is recommended
 | Central Server | central_server.cpp |
 |  Data Owner | data_owner.cpp |
 
+At the beginning of the system protocol, data owners receive public and private keys from the CSP. The central server receives only the public key. Then, each data owner sends the hashes of bigrams to the central server. After receiving the hashes from each data owner, the central server computes the intersection of the hashes. Then, the central server sends the elements of this intersection to data owners. 
+
+Upon receiving the intersection of the hashes from the central server, data owners encrypt the local frequency of the intersected bigrams. After encrypting the frequency, data owners send the ciphertexts to the central server, where the encrypted global frequency will be computed. 
+
+After receiving the ciphertexts, the central server performs homomorphic addition operation on these frequencies. Then, the central server performs the secure thresholding, and send an encrypted number (for each intersected bigram) to the data owners, who can decrypt and check if the corresponding bigram passed global filtering or not (positive means pass, negative means fail).
+
+The entities of the system architecture communicate using TCP. Ports used by the entities are mentioned below:
+```sh
+cs_port  = 33000           ; Port of central server for CSP
+cs_port_1= 33001           ; Port of central server for data owner 1
+cs_port_2= 33002           ; Port of central server for data owner 2
+cs_port_3= 33003           ; Port of central server for data owner 3
+cs_port_4= 33004           ; Port of central server for data owner 4
+csp_port = 34000           ; Port of CSP
+do_1_port= 34001           ; Port of data owner 1
+do_2_port= 34002           ; Port of data owner 2
+do_3_port= 34003           ; Port of data owner 3
+do_4_port= 34004           ; Port of data owner 4
+```
 # Directory Structure
 Common directory and files:
 - common:  directory containing some common utilities
