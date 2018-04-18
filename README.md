@@ -29,7 +29,7 @@ After receiving the ciphertexts, the central server performs homomorphic additio
 | Central Server | central_server.cpp |
 |  Data Owner | data_owner.cpp |
 
-# The entities of the system architecture communicate using TCP. Ports used by the entities are mentioned below:
+The entities of the system architecture communicate using TCP. Ports used by the entities are mentioned below:
 ```sh
 cs_port  = 33000           ; Port of central server for CSP
 cs_port_1= 33001           ; Port of central server for data owner 1
