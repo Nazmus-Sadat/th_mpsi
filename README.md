@@ -20,7 +20,7 @@ At the beginning of the system protocol, data owners receive public and private 
 
 Upon receiving the intersection of the hashes from the central server, data owners encrypt the local frequency of the intersected bigrams. After encrypting the frequency, data owners send the ciphertexts to the central server, where the encrypted global frequency will be computed. 
 
-After receiving the ciphertexts, the central server performs homomorphic addition operation on these frequencies. Then, the central server performs the secure thresholding, and send an encrypted number (for each intersected bigram) to the data owners, who can decrypt and check if the corresponding bigram passed global filtering or not (positive means pass, negative means fail).
+After receiving the ciphertexts, the central server performs homomorphic addition operation on these frequencies. Then, the central server performs secure thresholding, and send an encrypted number (for each intersected bigram) to the data owners, who can decrypt and check if the corresponding bigram passed global filtering or not (positive means pass, negative means fail).
 
 
 | Entity | Executable |
